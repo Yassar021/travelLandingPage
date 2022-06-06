@@ -29,8 +29,8 @@ const Travel = () => {
                         </Button>
             </Flex>
             <HStack mt='64px' spacing='32px'>
-                <Flex direction='row'>
-                    <Image src="/a-travel.png" w='320px' h='380px' alt='' />
+                <Flex direction={{lg:'column',xl:'row', '2xl':'row'}} textAlign={{base:'center',md:'center',lg:'justify',xl:'left','2xl':'left'}} alignItems={{base:'center',md:'center',lg:'justify',xl:'left','2xl':'left'}}>
+                    <Image mb='20px' src="/a-travel.png" w='320px' h='380px' alt='' />
                     <Box ml='32px'>
                         <Text fontSize='20px' fontWeight='600' color='#161414'>
                             East Village Ice Cream Crawl
@@ -69,8 +69,8 @@ const Travel = () => {
                         </Flex>
                     </Box>
                 </Flex>
-                <Flex direction='row'>
-                    <Image src="/b-travel.png" w='320px' h='380px' alt='' />
+                <Flex direction={{lg:'column',xl:'row', '2xl':'row'}} textAlign={{base:'center',md:'center',lg:'justify',xl:'left','2xl':'left'}} alignItems={{base:'center',md:'center',lg:'center',xl:'left','2xl':'left'}}>
+                    <Image  mb='20px' src="/b-travel.png" w='320px' h='380px' alt='' />
                     <Box ml='32px'>
                         <Text fontSize='20px' fontWeight='600'>
                             Brooklyn Bridge cinematic

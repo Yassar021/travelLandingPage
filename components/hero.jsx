@@ -59,7 +59,7 @@ function DrawerExample() {
 
 const Hero = () => {
     return(
-        <Box pt='64px' px={{base:'10px',md:'20px',lg:'60px',xl:'120px','2xl':'120px'}} pb='820px' bgImage='/bg-hero.png' borderRadius='0px 0px 54px 54px' backgroundRepeat='no-repeat' bgPosition='center' backgroundSize='cover'>
+        <Box pt='64px' px={{base:'10px',md:'16px',lg:'60px',xl:'120px','2xl':'120px'}} pb='820px' bgImage='/bg-hero.png' borderRadius='0px 0px 54px 54px' backgroundRepeat='no-repeat' bgPosition='center' backgroundSize='cover'>
             <Box>
                 <Stack direction='row' justifyContent='space-between' alignItems='center'>
                     <Image src='/logo.png' w='88ox' h='36px' alt="logo" />
@@ -118,9 +118,9 @@ const Hero = () => {
                     </Button>
                 </Stack>
             </Box>
-            <Box ml={{xl:'100px','2xl':'250px'}} mt='610px' position='absolute'>
+            <Box ml={{lg:'40px',xl:'100px','2xl':'250px'}} mt='610px' position='absolute'>
                 <Flex d='row'  bgColor='#fff' justifyContent='space-between' borderRadius='12px'>
-                        <Box p='24px'>
+                        <Box p={{lg:'12px',xl:'24px','2xl':'24px'}}>
                             <Flex d='row' alignItems='center'>
                                 <Stack>
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -129,11 +129,11 @@ const Hero = () => {
                                 </Stack>
                                 <Box ml='10px'>
                                     <Text color='#5B5B5B' fontSize='14px' fontWeight='300'>Location</Text>
-                                    <Text color='#161414' fontSize='16px' fontWeight='500'>Explore nearby destinations</Text>
+                                    <Text color='#161414' fontSize={{lg:'14px',xl:'16px','2xl':'16px'}} fontWeight='500'>Explore nearby destinations</Text>
                                 </Box>
                             </Flex>
                         </Box>
-                        <Box ml='40px' p='24px'>
+                        <Box ml='40px' p={{lg:'12px',xl:'24px','2xl':'24px'}}>
                             <Flex d='row' alignItems='center'>
                                 <Stack>
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -146,7 +146,7 @@ const Hero = () => {
                                 </Box>
                             </Flex>
                         </Box>
-                        <Box p='24px'>
+                        <Box p={{lg:'12px',xl:'24px','2xl':'24px'}}>
                             <Flex d='row' alignItems='center'>
                                 <Stack>
                                     <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -159,7 +159,7 @@ const Hero = () => {
                                 </Box>
                             </Flex>
                         </Box>
-                        <Box mx='40px' p='24px'>
+                        <Box mx='40px' p={{lg:'12px',xl:'24px','2xl':'24px'}}>
                             <Flex d='row' alignItems='center'>
                                 <Stack>
                                     <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -172,7 +172,7 @@ const Hero = () => {
                                 </Box>
                             </Flex>
                         </Box>
-                        <Box p='24px'>
+                        <Box p={{lg:'12px',xl:'24px','2xl':'24px'}}>
                                 <Button 
                                     size='lg'
                                     height='60px'

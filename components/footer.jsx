@@ -2,7 +2,7 @@ import { Box, Button, Container, Flex, HStack, Image, Input, Link, Stack, Text }
 
 const Footer = () => {
     return(
-        <Box bgColor='#F9F9F9' py='120px' px={{lg:'200px',xl:'200px','2xl':'360px'}}>
+        <Box bgColor='#F9F9F9' py='120px' px={{lg:'120px',xl:'200px','2xl':'360px'}}>
         
                 <Stack direction='row' spacing='32px'>
                     <Box>
