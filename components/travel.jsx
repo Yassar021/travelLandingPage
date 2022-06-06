@@ -1,4 +1,4 @@
-const { Box, Flex, Text, Button, HStack, Image, Stack } = require("@chakra-ui/react")
+const { Box, Flex, Text, Button, HStack, Image, Stack, SimpleGrid } = require("@chakra-ui/react")
 
 const Travel = () => {
     return(
@@ -28,9 +28,9 @@ const Travel = () => {
                             View all
                         </Button>
             </Flex>
-            <HStack mt='64px' spacing='32px'>
+            <SimpleGrid columns={{base:1, md:2,lg:2,xl:2,'2xl':2}} mt='64px' spacing='32px'>
                 <Flex direction={{base:'column',md:'column',lg:'column',xl:'row', '2xl':'row'}} textAlign={{base:'center',md:'center',lg:'justify',xl:'left','2xl':'left'}} alignItems={{base:'center',md:'center',lg:'justify',xl:'left','2xl':'left'}}>
-                    <Image mb='20px' src="/a-travel.png" w='100%' h='380px' alt='' />
+                    <Image mb='20px' src="/a-travel.png" w='320px' h='380px' alt='' />
                     <Box ml='32px'>
                         <Text fontSize='20px' fontWeight='600' color='#161414'>
                             East Village Ice Cream Crawl
@@ -70,7 +70,7 @@ const Travel = () => {
                     </Box>
                 </Flex>
                 <Flex direction={{base:'column',md:'column',lg:'column',xl:'row', '2xl':'row'}} textAlign={{base:'center',md:'center',lg:'justify',xl:'left','2xl':'left'}} alignItems={{base:'center',md:'center',lg:'center',xl:'left','2xl':'left'}}>
-                    <Image  mb='20px' src="/b-travel.png" w='100%' h='380px' alt='' />
+                    <Image  mb='20px' src="/b-travel.png" w='320px' h='380px' alt='' />
                     <Box ml='32px'>
                         <Text fontSize='20px' fontWeight='600'>
                             Brooklyn Bridge cinematic
@@ -108,7 +108,7 @@ const Travel = () => {
                         </Flex>
                     </Box>
                 </Flex>
-            </HStack>
+            </SimpleGrid>
 
         </Box>
     )

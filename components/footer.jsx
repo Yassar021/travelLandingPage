@@ -59,8 +59,8 @@ const Footer = () => {
                             Subscribe on our destination review <br />newsletters
                         </Text>
 
-                        <HStack  mt='20px' spacing='16px'>
-                            <Box p='16px' w='300px' h='82px' bgColor='#fff' borderRadius='12px' shadow='lg' >
+                        <Stack direction={{base:'column',md:'row',lg:'row',xl:'row','2xl':'row'}}  mt='20px' spacing='16px'>
+                            <Box p='16px' w='300px' h='82px' bgColor='#fff' borderRadius='12px' >
                                 <Flex direction='row'>
                                     <Stack justifyContent='center' mr='16px'>
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -73,7 +73,7 @@ const Footer = () => {
                                     </Box>
                                 </Flex>
                             </Box>
-                            <Box shadow='lg'>
+                            <Box>
                                 <Button
                                     size='md'
                                     height='82px'
@@ -94,7 +94,7 @@ const Footer = () => {
                                         </svg></Stack>
                                     </Button>
                             </Box>
-                        </HStack>
+                        </Stack>
                     </Box>
                 </Stack>
             

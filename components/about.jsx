@@ -31,7 +31,7 @@ const About = () => {
                             Read More
                         </Button>
                 </Box>
-                <Image src='/about.png' maxW='556px' maxH='488px' alt='' />
+                <Image src='/about.png' w='100%' maxH='488px' alt='' />
             </Flex>
         </Box>
     )

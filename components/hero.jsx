@@ -7,13 +7,15 @@ function DrawerExample() {
   
     return (
       <>
-        <Button rightIcon={<svg width="30" height="25" viewBox="0 0 30 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M22.0027 12.7014H10.0027" stroke="#fff" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"/>
-        <path d="M25.0027 5.70142H7.00269" stroke="#fff" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"/>
-        <path d="M25.0027 19.7014H7.00269" stroke="#fff" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"/>
-        </svg>
-        } ref={btnRef} fontFamily='Poppins' bgColor='#0E1035' color='#fff' w='auto' h='48px' onClick={onOpen}>
-          
+        <Button 
+            ref={btnRef} fontFamily='Poppins' bgColor='#0E1035' color='#fff' w='auto' h='48px' onClick={onOpen}>
+            <Stack>
+                <svg width="30" height="25" viewBox="0 0 30 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M22.0027 12.7014H10.0027" stroke="#fff" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"/>
+                    <path d="M25.0027 5.70142H7.00269" stroke="#fff" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"/>
+                    <path d="M25.0027 19.7014H7.00269" stroke="#fff" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+            </Stack>
         </Button>
         <Drawer
           isOpen={isOpen}
@@ -46,7 +48,7 @@ function DrawerExample() {
             </DrawerBody>
   
             <DrawerFooter>
-              <Button variant='outline' mr={3} onClick={onClose}>
+              <Button variant='outline' mr={3} onClick={onClose} color='#fff' bgColor='#0E1035'>
                 Close
               </Button>
               {/* <Button colorScheme='blue'>Save</Button> */}
@@ -119,7 +121,7 @@ const Hero = () => {
                 </Stack>
             </Box>
             <Box ml={{base:'0px',md:'-18px',lg:'0px',xl:'100px','2xl':'250px'}} mt='610px' position='absolute'>
-                <Flex d='row'  bgColor='#fff' justifyContent='space-between' borderRadius='12px'>
+                <Flex display={{base:'none',md:'flex', lg:'flex', xl:'flex','2xl':'flex'}} d='row'  bgColor='#fff' justifyContent='space-between' borderRadius='12px'>
                         <Box p={{md:'16px',lg:'12px',xl:'24px','2xl':'24px'}}>
                             <Flex d='row' alignItems='center'>
                                 <Stack>
