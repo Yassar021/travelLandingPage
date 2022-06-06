@@ -2,13 +2,13 @@ import { Box, Button, Container, Flex, HStack, Image, Input, Link, Stack, Text }
 
 const Footer = () => {
     return(
-        <Box bgColor='#F9F9F9' py='120px' px={{lg:'120px',xl:'200px','2xl':'360px'}}>
+        <Box bgColor='#F9F9F9' py='120px' px={{md:'160px',lg:'60px',xl:'200px','2xl':'360px'}} textAlign={{base:'center',md:'center',lg:'left',xl:'left','2xl':'left'}} alignItems={{base:'center',md:'center',lg:'left',xl:'left','2xl':'left'}}>
         
-                <Stack direction='row' spacing='32px'>
+                <Stack direction={{base:'column',md:'column',lg:'row'}} spacing='32px'>
                     <Box>
-                        <Image src="/logo2.png" h='35.42px' alt='' />
+                        <Image mx={{base:'auto',md:'auto',lg:'0px',xl:'0px','2xl':'0px',}} src="/logo2.png" h='35.42px' alt='' />
                         <Text mt='16px' mb='32px'fontSize='13px' color='#5B5B5B' >We always make our customers happy by providing<br /> as many choises as possible</Text>
-                        <HStack spacing='34px'>
+                        <HStack spacing='34px' justifyContent={{base:'center',md:'center',lg:'left',xl:'left','2xl':'left'}}>
                             <Link>
                                 <Stack>
                                     <svg width="28" height="27" viewBox="0 0 28 27" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -40,14 +40,14 @@ const Footer = () => {
                         <Text mt='12px' fontSize='13px' fontWeight='400' color='#5B5B5B' >Menu</Text>
                     </Box>
                     <Box>
-                        <Text fontSize='18px' fontWeight='600' color='#161414' >About</Text>
+                        <Text fontSize='18px' fontWeight='600' color='#161414' >Company</Text>
                         <Text mt='20px' fontSize='13px' fontWeight='400' color='#5B5B5B' >About Us</Text>
                         <Text my='12px' fontSize='13px' fontWeight='400' color='#5B5B5B' >Features</Text>
                         <Text fontSize='13px' fontWeight='400' color='#5B5B5B' >News</Text>
                         <Text mt='12px' fontSize='13px' fontWeight='400' color='#5B5B5B' >Menu</Text>
                     </Box>
                     <Box>
-                        <Text fontSize='18px' fontWeight='600' color='#161414' >About</Text>
+                        <Text fontSize='18px' fontWeight='600' color='#161414' >Support</Text>
                         <Text mt='20px' fontSize='13px' fontWeight='400' color='#5B5B5B' >About Us</Text>
                         <Text my='12px' fontSize='13px' fontWeight='400' color='#5B5B5B' >Features</Text>
                         <Text fontSize='13px' fontWeight='400' color='#5B5B5B' >News</Text>

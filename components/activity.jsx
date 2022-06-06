@@ -1,4 +1,4 @@
-import { Box, Button, Flex, Stack, Text } from "@chakra-ui/react"
+import { Box, Button, Flex, SimpleGrid, Text } from "@chakra-ui/react"
 import CardActivity from "./cardActivity"
 
 const Activity = () => {
@@ -30,12 +30,12 @@ const Activity = () => {
                         </Button>
             </Flex>
 
-            <Stack mt='64px' direction='row' spacing='32px'>
+            <SimpleGrid mt='64px' columns={{base:'1',md:2, lg:4,xl:4,'2xl':4}} spacing='32px'>
                 <CardActivity image={'a-activy.png'} title='Sailing' />
                 <CardActivity image={'b-activy.png'} title='Climbing' />
                 <CardActivity image={'c-activy.png'} title='Skiing' />
                 <CardActivity image={'d-activy.png'} title='Hiking' />
-            </Stack>
+            </SimpleGrid>
         </Box>
     )
 }

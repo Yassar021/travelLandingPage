@@ -3,7 +3,7 @@ import { Box, Button, Flex, Image, Text } from "@chakra-ui/react"
 const About = () => {
     return(
         <Box pt='120px' pb='120'>
-            <Flex direction='row' justifyContent='center'>
+            <Flex direction={{base:'column',md:'column',lg:'row',xl:'row','2xl':'row'}} justifyContent='center' textAlign={{base:'center',md:'center',lg:'justify',xl:'left','2xl':'left'}} alignItems={{base:'center',md:'center',lg:'justify',xl:'left','2xl':'left'}}>
                 <Box my='auto' mr='32px'>
                     <Text fontSize='32px' fontWeight='600' color='#161414'>About Us</Text>
                     <Text fontSize='16px' fontWeight='400' color='#5B5B5B' my='32px'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse a sapien justo. Nulla facilisis tristique imperdiet. Nullam a placerat odio. Sed in ex augue. Aliquam porta consectetur lorem sit amet ultrices. 

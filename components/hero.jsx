@@ -87,9 +87,9 @@ const Hero = () => {
                     </Hide>
                 </Stack>
             </Box>
-            <Box  position='absolute' mt='150px' ml={{xl:'210px','2xl':'350px'}}>
+            <Box  position='absolute' mt='150px' ml={{md:'60px',lg:'160px',xl:'210px','2xl':'350px'}}>
                 <Stack d='column' alignItems='center'>
-                    <Text fontSize='48px' fontWeight='600' color='#fff'>Discover the most engaging places</Text>
+                    <Text fontSize={{base:'32px',md:'36px',lg:'48px',xl:'48px','2xl':'48px'}} fontWeight='600' color='#fff'>Discover the most engaging places</Text>
                     <Button 
                             leftIcon={
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -118,9 +118,9 @@ const Hero = () => {
                     </Button>
                 </Stack>
             </Box>
-            <Box ml={{lg:'40px',xl:'100px','2xl':'250px'}} mt='610px' position='absolute'>
+            <Box ml={{base:'0px',md:'-18px',lg:'0px',xl:'100px','2xl':'250px'}} mt='610px' position='absolute'>
                 <Flex d='row'  bgColor='#fff' justifyContent='space-between' borderRadius='12px'>
-                        <Box p={{lg:'12px',xl:'24px','2xl':'24px'}}>
+                        <Box p={{md:'16px',lg:'12px',xl:'24px','2xl':'24px'}}>
                             <Flex d='row' alignItems='center'>
                                 <Stack>
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -133,7 +133,7 @@ const Hero = () => {
                                 </Box>
                             </Flex>
                         </Box>
-                        <Box ml='40px' p={{lg:'12px',xl:'24px','2xl':'24px'}}>
+                        <Box p={{md:'16px',lg:'12px',xl:'24px','2xl':'24px'}}>
                             <Flex d='row' alignItems='center'>
                                 <Stack>
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -146,7 +146,7 @@ const Hero = () => {
                                 </Box>
                             </Flex>
                         </Box>
-                        <Box p={{lg:'12px',xl:'24px','2xl':'24px'}}>
+                        <Box p={{md:'16px',lg:'12px',xl:'24px','2xl':'24px'}}>
                             <Flex d='row' alignItems='center'>
                                 <Stack>
                                     <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -159,7 +159,7 @@ const Hero = () => {
                                 </Box>
                             </Flex>
                         </Box>
-                        <Box mx='40px' p={{lg:'12px',xl:'24px','2xl':'24px'}}>
+                        <Box mx='40px' p={{md:'16px',lg:'12px',xl:'24px','2xl':'24px'}}>
                             <Flex d='row' alignItems='center'>
                                 <Stack>
                                     <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -172,7 +172,7 @@ const Hero = () => {
                                 </Box>
                             </Flex>
                         </Box>
-                        <Box p={{lg:'12px',xl:'24px','2xl':'24px'}}>
+                        <Box p={{md:'16px',lg:'12px',xl:'24px','2xl':'24px'}}>
                                 <Button 
                                     size='lg'
                                     height='60px'

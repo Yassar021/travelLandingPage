@@ -3,7 +3,7 @@ import { Box, Flex, HStack, Image, Stack, Text } from "@chakra-ui/react"
 const CardHotel = ({image, title, location, star}) => {
     return(
         <Box>
-            <Image src={image} w='320px' h='380px' alt='' />
+            <Image src={image} w='100%' h='380px' alt='' />
             <Text mt='8px' fontSize='16px' fontWeight='500' color='#161414'>{title}</Text>
             <Flex direction='row' justifyContent='space-between' justifyItems='center'>
                     <Stack my='auto' direction='row'>

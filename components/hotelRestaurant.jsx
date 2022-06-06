@@ -1,4 +1,4 @@
-import { Box, Button, Flex, Stack, Text } from "@chakra-ui/react"
+import { Box, Button, Flex, SimpleGrid, Stack, Text } from "@chakra-ui/react"
 import CardHotel from "./cardHotel"
 
 const HotelRestaurant = () => {
@@ -29,12 +29,12 @@ const HotelRestaurant = () => {
                             View all
                         </Button>
             </Flex>
-            <Stack direction='row' spacing='32px'  mt='64px'>
+            <SimpleGrid columns={{base:1,md:2,lg:2,xl:4,'2xl':4}}spacing='32px'  mt='64px'>
                 <CardHotel image={'/a-hotel.png'} title={'Monastero Santa Rosa Hotel & Spa'} location={'Salerno, Italy'} star={3} />
                 <CardHotel image={'/b-hotel.png'} title={'Grand Hotel Tremezzo'} location={'Lake Como, Italy'} star={4} />
                 <CardHotel image={'/c-hotel.png'} title={'The Oberoi Udaivilas, Udaipur'} location={'Udaipur, India'} star={5} />
                 <CardHotel image={'/d-hotel.png'} title={'AKA Beverly Hills'} location={'Los Angeles, United States'} star={2} />
-            </Stack>
+            </SimpleGrid>
         </Box>
     )
 }
